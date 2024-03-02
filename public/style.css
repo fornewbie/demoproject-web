@@ -1,0 +1,118 @@
+:root {
+    --blue: #6495ed;
+    --white: #faf0e6;
+  }
+  
+
+* {
+    /* Don't many code here*/
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    height: 50px;
+    background-color: aqua;
+}
+
+#header #nav {
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+
+    /* fix bug you can edit if it better */
+    /* remove " " in between <li> tag  */
+    font-size: 0; 
+}
+
+#header #nav li {
+    font-size: 16px;
+    display: inline-block;
+    width: 100px;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+
+#header #nav li:hover {
+    background-color: #0000000f;
+}
+
+#header #setting {
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    width: 15%;
+    max-width: 100px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: blue;
+}
+
+#header #setting:hover {
+    background-color: #0000ed;
+}
+
+#header #setting #setting-nav {
+    background-color: #ccc;
+    list-style: none;
+
+}
+
+#header #setting #setting-nav > *{
+    display: block;
+    padding: 0;
+    text-align:left ; 
+    padding-left: 4px;
+    height: 45px;
+    width: 100%;
+}
+
+
+
+#header #setting #setting-nav li:hover{
+    background-color: #c7c7c7;
+}
+
+#header #setting #setting-nav #theme #theme-switch{
+    display: inline-block;
+    width: 30px;
+    height: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+#header #setting #setting-nav #theme #theme-switch #theme-switch-child {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #12c56e;
+    border-radius: 5px;
+    padding: 0;
+}
+
+#header #setting #setting-nav #theme #theme-btn {
+    width: 0px;
+    height: 0px;
+}
+
+/* It can't be use because after must a id #xxx , class .yyy or tag (div, input, ...) */
+/* #header #setting #setting-nav #theme #theme-btn:checked + #header #setting #setting-nav #theme #theme-switch #theme-switch-child {
+    background-color: #000 !important;
+} */
+
+#header #setting #setting-nav #theme #theme-btn:checked + #theme-switch-child{
+    background-color: #000;
+    transform: translateX(15px);
+}
+
+/* class */
+
+.hiden {
+    display: none !important;
+}
+
