@@ -65,8 +65,12 @@ node_modules/
 # dotenv environment variables file
 .env
 
+<<<<<<< HEAD
 #note 
 
 note.txt
 
 #custom for you
+=======
+note.txt
+>>>>>>> e72136624a534d9275d58a8dcd8e84899d3e034d
